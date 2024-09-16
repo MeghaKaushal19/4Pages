@@ -11,9 +11,9 @@ const TravelAILogin = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-white p-4 ${poppins.variable}">
       <div className="rounded-lg p-8 max-w-sm w-full">
         <div className="flex flex-col items-center mb-6">
-          <div className="w-24 h-24 bg-blue-300 rounded-full overflow-hidden mb-4">
+          <div className="w-24 h-24 bg-blue-300 rounded-full overflow-hidden mb-4 border border-black">
             <img
-              src=""
+              src="/images/chatbot logooo.jpg"
               alt="Travel.AI Avatar"
               className="w-full h-full object-cover"
             />

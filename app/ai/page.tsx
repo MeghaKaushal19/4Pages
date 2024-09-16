@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import { HiOutlineSpeakerWave } from "react-icons/hi2";
 
-
 // Define the message type for better type safety
 type MessageType = {
   type: "bot" | "user";
@@ -93,16 +92,17 @@ export default function TravelAIBot() {
             <button className="md:hidden">
               <ArrowLeft className="h-5 w-5" />
             </button>
-            <div className="rounded-full bg-gray-200 h-10 w-10 flex items-center justify-center">
-              <img
-                src="/placeholder.svg?height=36&width=36"
-                alt="AI"
-                className="h-9 w-9 object-cover"
-              />
-            </div>
+            <div className="rounded-full overflow-hidden bg-gray-200 h-10 w-10 flex items-center justify-center">
+  <img
+    src="/images/chatbot logooo.jpg"
+    alt="AI"
+    className="h-full w-full object-cover"  
+  />
+</div>
+
             <div className="flex justify-between items-center">
               <div className="flex justify-between gap-8 text-black items-center">
-              <div className="">
+                <div className="">
                   <h2 className="text-base text-black font-semibold">
                     Travel AI bot
                   </h2>
@@ -112,17 +112,17 @@ export default function TravelAIBot() {
             </div>
           </div>
           <div className="flex gap-4">
-          <HiOutlineSpeakerWave className="h-6 w-6 text-black"/>
+            <HiOutlineSpeakerWave className="h-6 w-6 text-black"/>
             <MoreHorizontal className="h-6 w-6 text-black" />
           </div>
         </div>
 
         <div className="p-4 h-[500px] overflow-y-auto">
-          <div className="flex items-center justify-center ">
+          <div className="flex items-center justify-center overflow-hidden ">
             <img
-              src=""
+              src="/images/chatbot logooo.jpg"
               alt="AI"
-              className="h-28 w-28 object-cover bg-gray-200 mb-8 rounded-full"
+              className="h-28 w-28 object-cover bg-gray-200 mb-8 rounded-full border border-black"
             />
           </div>
           <div className="space-y-4">
@@ -134,13 +134,14 @@ export default function TravelAIBot() {
                 }`}
               >
                 {message.type === "bot" && (
-                  <div className="rounded-full bg-gray-200 h-10 w-10 flex items-center justify-center">
-                    <img
-                      src="/placeholder.svg?height=40&width=40"
-                      alt="AI"
-                      className="h-9 w-9 object-cover"
-                    />
-                  </div>
+                  <div className="rounded-full overflow-hidden bg-gray-200 h-10 w-10 flex items-center justify-center">
+                  <img
+                    src="/images/chatbot logooo.jpg"
+                    alt="AI"
+                    className="h-full w-full object-cover"  
+                  />
+                </div>
+                
                 )}
                 <div
                   className={`rounded-lg p-4 max-w-[80%] ${
